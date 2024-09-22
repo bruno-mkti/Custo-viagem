@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Viagem</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Calculadora de Viagem</h1>
+
+    <form>
+        <label for="combustivel">Tipo de Combustível:</label>
+        <select id="combustivel" name="combustivel">
+            <option value="gasolina">Gasolina</option>
+            <option value="alcool">Álcool</option>
+            <option value="diesel">Diesel</option>
+            <option value="gnv">GNV</option>
+        </select><br><br>
+    </form>
+    <input type="number" id="precoCombustivel" placeholder="Preço do combustível (R$)">
+    <input type="number" id="gastoMedio" placeholder="Consumo (km/l)">
+    <input type="number" id="distancia" placeholder="Distância (km)">
+
+    <button onclick="calcularCustoViagem()">Calcular Custo</button>
+
+    <div id="resultado"></div>
+</div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
